@@ -61,7 +61,7 @@ async def cancel(update: Update, context: CallbackContext) -> None:
 
 
 def main() -> None:
-    application = Application.builder().token(os.environ['HOME']).build()
+    application = Application.builder().token(os.environ['TG_BOT_TOKEN']).build()
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("Help", help_command))
     application.add_handler(CommandHandler("transfer_style", transfer_photo))
