@@ -1,7 +1,6 @@
 import os
 
 import MlPart
-from config import *
 from telegram import ForceReply, Update, InlineKeyboardButton, InlineKeyboardMarkup, KeyboardButton, \
     ReplyKeyboardMarkup, ReplyKeyboardRemove, Bot
 from telegram.ext import Application, Updater, CommandHandler, CallbackContext, MessageHandler, filters, \
